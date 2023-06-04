@@ -15,20 +15,20 @@ const Listing: React.FC<{ data: Transaction[] }> = ({ data }) => {
 			</h3>
 			<table className="w-full border-collapse">
 				<thead>
-					<tr>
-						<th className="px-5 py-2 bg-gray-700 text-gray-300 font-medium">
+					<tr className='bg-gray-700 text-gray-300'>
+						<th className="px-5 py-2 font-medium">
 							ID
 						</th>
-						<th className="px-5 py-2 bg-gray-700 text-gray-300 font-medium">
+						<th className="px-5 py-2 font-medium">
 							Transaction Type
 						</th>
-						<th className="px-5 py-2 bg-gray-700 text-gray-300 font-medium">
+						<th className="px-5 py-2 font-medium">
 							Amount
 						</th>
-						<th className="px-5 py-2 bg-gray-700 text-gray-300 font-medium">
+						<th className="px-5 py-2 font-medium">
 							Date
 						</th>
-						<th className="px-5 py-2 bg-gray-700 text-gray-300 font-medium">
+						<th className="px-5 py-2 font-medium">
 							Time
 						</th>
 					</tr>
@@ -40,7 +40,7 @@ const Listing: React.FC<{ data: Transaction[] }> = ({ data }) => {
 						return (
 							<tr
 								key={item.id}
-								className="hover:bg-gray-800 cursor-pointer duration-500 border-b border-b-gray-700 text-gray-300"
+								className="hover:bg-gray-700 cursor-pointer duration-500 border-b border-b-gray-700 text-gray-300"
 							>
 								<td className="text-sm px-5 py-2 text-center">{item.id}</td>
 								<td className="text-sm px-5 py-2 text-center capitalize">

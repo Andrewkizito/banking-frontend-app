@@ -1,15 +1,16 @@
 import { ReactElement } from 'react'
 
 // Auth screens
-import Welcome from '../pages/auth/Welcome'
 import Login from 'pages/auth/Login'
+import Register from 'pages/auth/Register'
+import Welcome from '../pages/auth/Welcome'
 
 // Core components
 import Layout from 'components/core/Layout'
 
 // Importing main pages
 import Dashboard from 'pages/app/Dashboard/Dashboard'
-import Register from 'pages/auth/Register'
+import Transactions from 'pages/app/Transactions/Transactions'
 
 export type AuthState = 'authenticated' | 'unauthenticated'
 
@@ -62,7 +63,7 @@ const routes: Route[] = [
 		path: '/transactions',
 		component: (
 			<Layout>
-				<Dashboard />
+				<Transactions />
 			</Layout>
 		),
 		guarded: 'authenticated',
